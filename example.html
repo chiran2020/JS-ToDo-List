@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>JavaScript DOM Example</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="tdStyle.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <h2>Todo List: <span id="counter">88</span> jobs in list</h2>
+    <ul id='jobList'>
+      <li class="todo">Paint the fence</li>
+      <li class="todo">Water the plants</li>
+      <li class="todo">Mow the lawn</li>
+      <li class="done">Check email</li>
+    </ul>
+
+    <div id="newJobButton"><button href="#" id="showForm">Add New Job</button></div>
+    <form id="newJobForm">
+      <input type="text" id="itemDescription" placeholder="Job description" /> &nbsp;
+
+      <input type="button" id="addJob" value="add this job" />
+    </form>
+  </div> <!-- end class=container    -->
+
+  <script src="example.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+body {
+  background-color: bisque;
+}
+ul {width: 60%}
+li {padding-left: 8px; padding-right: 20px; font-size: 24px}
+img {padding-right: 15px;}
+
+#newItemButton {padding: 10px 20px 75px 20px; display: none;}
+#newItemForm {padding-top: 22px;}
+#itemDescription {width: 330px;}
+
+.todo {
+  color: #fff;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  background-color: skyblue;
+  background-image: url("todo.png");
+  background-position: right, center;
+  background-repeat: no-repeat;
+}
+
+.done {
+  color: #fff;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  background-color: grey;
+  background-image: url("trash.jpg");
+  background-position: right, center;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
