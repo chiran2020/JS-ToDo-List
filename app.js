@@ -9,7 +9,7 @@ window.onload = function () {
 
 	function init() {                             // initialize interface
 		jobForm.style.display = 'none';
-		addItemBtn.style.display = 'inline';
+		addItemBtn.style.display = 'block';
 		// get the count of items
 		document.getElementById('counter').innerText = list.children.length;
 	}
@@ -17,9 +17,11 @@ window.onload = function () {
 	init();    // Call initialize function
 
 	list.onclick = function (e) {   // this approach won't work for older IE browsers
+
 		var target = e.target;             // get clicked LI, 
-		if (target.className == 'todo')     // assign proper class
+		if (target.className == 'todo') {   // assign proper class
 			target.className = 'done';
+		}
 		else if (target.className == 'done') {
 			target.parentNode.removeChild(target);
 			document.getElementById('counter').innerText = list.children.length;

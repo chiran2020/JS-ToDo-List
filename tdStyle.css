@@ -1,22 +1,91 @@
 body {
-  background-color: bisque;
+  /* background-color: rgb(193, 135, 19); */
+  
 }
-ul {width: 60%}
-li {padding-left: 8px; padding-right: 20px; font-size: 24px}
-img {padding-right: 15px;}
 
-#newItemButton {padding: 10px 20px 75px 20px; display: none;}
-#newItemForm {padding-top: 22px;}
-#itemDescription {width: 330px;}
+.container{
+  width: 100%;
+  height: 100vh;
+  background: rgb(31, 30, 30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.8;
+   
+}
+
+.container::before{
+  content: " ";
+  background-image: url("./blue.png");
+   
+  width: 100%;
+  height: 100%;
+   
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  opacity: 0.4;
+}
+
+h2{
+  color: rgb(225, 214, 214);
+  z-index: 1;
+  text-align: center;
+}
+
+
+ul {
+  width: 70%;
+  text-align: center;
+  list-style: none;
+  /* border-radius: 15px; */
+   
+  z-index: 2;
+   
+  
+   
+  
+}
+
+li {
+   padding: 5px;
+  font-size: 24px;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 5px;
+  border: 3px solid rgb(163, 18, 18);
+   
+   
+   
+}
+
+  img {
+    padding-right: 15px;
+  }
+
+#newItemButton {
+  padding: 10px 20px 75px 20px; 
+  display: none;}
+
+#newItemForm {
+  padding-top: 22px;
+}
+
+#itemDescription {
+  width: 330px;
+}
 
 .todo {
   color: #fff;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
-  background-color: skyblue;
+  background-color: #333;
   background-image: url("todo.png");
   background-position: right, center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .done {
@@ -27,6 +96,66 @@ img {padding-right: 15px;}
   background-image: url("trash.jpg");
   background-position: right, center;
   background-repeat: no-repeat;
+}
+
+#newJobButton{
+  z-index: 3;
+}  
+
+div #showForm{
+  background-color: #333;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 3;
+  transition: all 1s;
+}
+
+div #showForm:hover{
+  opacity: 0.8;
+  transform: rotate(10deg);
+  border: 2px salmon solid;
+}
+
+#itemDescription{
+  padding: 10px;
+  /* border-radius: 10px; */
+  border: none;
+  border-bottom: 2px solid white;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+
+}
+
+#itemDescription::placeholder{
+  color: #fff;
+  opacity: 1;
+}
+
+#addJob{
+  background-color: #333;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 3;
+  transition: all 1s;
+
+}
+
+ #addJob:hover{
+  border: 1px red solid;
+  opacity: 0.8;
+  transform: rotate(10deg);
+}
+
+form{
+  z-index: 1;
 }
 
 
